@@ -23,10 +23,6 @@ jar{
             'Premain-Class': 'me.onils.nopinnedservers.Agent',
             'Can-Retransform-Classes': true
     )
-    enabled = false
-    dependsOn shadowJar
 }
 
-shadowJar {
-    archiveFileName = "${project.name}.jar"
-}
+build.dependsOn shadowJar
